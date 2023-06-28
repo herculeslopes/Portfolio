@@ -1,3 +1,58 @@
+.project-card-wrapper {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+.project-card-wrapper .project-card {
+  display: flex;
+  background-color: #E6FEFF;
+  border-radius: 5px;
+  width: inherit;
+  height: inherit;
+}
+.project-card-wrapper .project-card .img {
+  width: 200px;
+  object-fit: cover;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+.project-card-wrapper .project-card .info {
+  padding: 0 25px;
+}
+.project-card-wrapper .project-card .info .description {
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.project-card-wrapper .project-card .info .platforms {
+  display: flex;
+  gap: 5px;
+  float: right;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  background-image: linear-gradient(to right top, #008b93, #009c9a, #00ad9d, #1fbe9c, #45ce97);
+  min-height: 100vh;
+}
+
+body {
+  color: #213547;
+}
+
+/* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -66,4 +121,6 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,56 @@
+// Styles everything project-related
+
+.project-card-wrapper {
+    display: flex;
+
+    width: 600px;
+    height: 300px;
+
+    align-items: center;
+    justify-content: center;
+
+    .project-card {
+        display: flex;
+
+        background-color: #E6FEFF;
+        border-radius: 5px;
+
+        width: inherit;
+        height: inherit;
+
+        .img {
+            width: 200px;
+            // height: 300px;
+
+            object-fit: cover;
+
+            border-top-left-radius: inherit;
+            border-bottom-left-radius: inherit;
+        }
+
+        .info {
+            padding: 0 25px;
+
+            .description {
+                text-align: justify;
+
+                // white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .platforms {
+                display: flex;
+                gap: 5px;
+                float: right;
+            }
+        }
+    }
+
+    // :hover {
+    //     &.project-card {
+    //         width: 90%;
+    //         height: 90%;
+    //     }
+    // }
+}
