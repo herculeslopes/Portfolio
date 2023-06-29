@@ -14,16 +14,16 @@ const Home = () => {
       <hr />
 
       <section>
-        <h2>Habilidades</h2>
+        <h2>Projetos</h2>
+        <div className="projects-container">
+          {projects.map(project => <Project {...project} />)}
+        </div>
       </section>
 
       <hr />
 
       <section>
-        <h2>Projetos</h2>
-        <div className="projects-container">
-          {projects.map(project => <Project {...project} />)}
-        </div>
+        <h2>Habilidades</h2>
       </section>
     </div>
   </>

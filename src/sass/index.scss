@@ -21,7 +21,7 @@ html {
 body {
   color: #213547;
 
-
+  overflow: hidden;
 }
 
 .home {
@@ -43,6 +43,7 @@ body {
   a {
     @include variables.background-transition;
 
+    color: inherit;
     text-decoration: none;
     border: 1px solid #213547;
     border-radius: 3px;
@@ -61,7 +62,7 @@ body {
 
 hr {
   width: 30%;
-  border: 1px solid black;
+  border: 1px solid #213547;
 }
 
 /* 

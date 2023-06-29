@@ -1,5 +1,7 @@
 // Styles everything project-related
 
+@use 'variables.scss';
+
 .project-card-wrapper {
     display: flex;
 
@@ -12,6 +14,8 @@
     cursor: pointer;
 
     .project-card {
+        @include variables.size-fast-transition;
+
         display: flex;
 
         background-color: #E6FEFF;
@@ -31,6 +35,8 @@
         }
 
         .info {
+            display: flex;
+            flex-direction: column;
             padding: 0 25px;
 
             .description {
@@ -43,18 +49,19 @@
 
             .platforms {
                 display: flex;
+                padding: 10px;
                 gap: 5px;
-                float: right;
+                margin-top: auto;
             }
         }
     }
 
-    // :hover {
-    //     &.project-card {
-    //         width: 90%;
-    //         height: 90%;
-    //     }
-    // }
+    :hover {
+        &.project-card {
+            width: 95%;
+            height: 95%;
+        }
+    }
 }
 
 .projects-container {
@@ -64,21 +71,24 @@
 
     gap: 30px;
 
-    &:after {
-        content: "";
-        // flex: auto;
-    }
+    // &:after {
+    //     content: "";
+    //     flex: auto;
+    // }
+    // &:after, 
+    
 
-    &:after, .project-card-wrapper {
-        margin: 0.5rem 0;
+    .project-card-wrapper {
+        // margin: 0.5rem 0;
         // width: 620px;
 
-        flex-grow: 1;
+        // flex-grow: 1;
         
 
 
         // width: ;
         // width: calc(100%  / 3 - 1rem);
+        width: calc((100% - 30px * 2) / 2);
         // margin: 0.5rem 0.5rem;
     }
 
