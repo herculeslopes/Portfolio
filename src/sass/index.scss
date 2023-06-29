@@ -1,29 +1,70 @@
 @use 'projects.scss';
+@use 'variables.scss';
 
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 html {
-    background-image: linear-gradient(to right top, #008b93, #009c9a, #00ad9d, #1fbe9c, #45ce97);
-    min-height: 100vh;
+  background-image: linear-gradient(to right top, #008b93, #009c9a, #00ad9d, #1fbe9c, #45ce97);
+  min-height: 100vh;
 }
 
 body {
-    color: #213547;
+  color: #213547;
 
 
 }
 
-  /* 
+.home {
+  section {
+    padding: 0 10%;
+  }
+}
+
+.static-content-wrapper {
+  margin: auto;
+  width: 50%;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  
+  a {
+    @include variables.background-transition;
+
+    text-decoration: none;
+    border: 1px solid #213547;
+    border-radius: 3px;
+    padding: 5px;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover, &.active {
+      background-color: #213547;
+      color: white;
+    }
+  }
+}
+
+hr {
+  width: 30%;
+  border: 1px solid black;
+}
+
+/* 
   :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -93,4 +134,3 @@ body {
       background-color: #f9f9f9;
     }
   } */
-  

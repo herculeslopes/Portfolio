@@ -9,17 +9,19 @@
     align-items: center;
     justify-content: center;
 
+    cursor: pointer;
+
     .project-card {
         display: flex;
 
         background-color: #E6FEFF;
         border-radius: 5px;
 
-        width: inherit;
+        width: 100%;
         height: inherit;
 
         .img {
-            width: 200px;
+            width: 30%;
             // height: 300px;
 
             object-fit: cover;
@@ -53,4 +55,31 @@
     //         height: 90%;
     //     }
     // }
+}
+
+.projects-container {
+    display: flex;
+    // justify-content: space-between;
+    flex-flow: wrap;
+
+    gap: 30px;
+
+    &:after {
+        content: "";
+        // flex: auto;
+    }
+
+    &:after, .project-card-wrapper {
+        margin: 0.5rem 0;
+        // width: 620px;
+
+        flex-grow: 1;
+        
+
+
+        // width: ;
+        // width: calc(100%  / 3 - 1rem);
+        // margin: 0.5rem 0.5rem;
+    }
+
 }
