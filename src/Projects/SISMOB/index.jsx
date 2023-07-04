@@ -1,10 +1,9 @@
-import ReactMarkdown from 'react-markdown'
-import Sis from '../Contents/sis.mdx'
+import Content from './Content.mdx';
 
 const SISMOB = () => {
   return <>
     <div className="static-content-wrapper">
-      <Sis />
+      <Content />
     </div>
   </>
 }

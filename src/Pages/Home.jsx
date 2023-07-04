@@ -8,23 +8,25 @@ const Home = () => {
 
   return <>
     <div className="home">
-      <h1>Lorem Ipsum</h1>
-      {/* <h1>Desenvolvedor Fullstack</h1> */}
+      <section className="presentation">
+        <h1>HÉRCULES LOPES</h1>
+        <h2>DESENVOLVEDOR</h2>
+      </section>
 
       <hr />
 
       <section>
-        <h2>Projetos</h2>
+        <h2>PROJETOS</h2>
         <div className="projects-container">
           {projects.map(project => <Project {...project} />)}
         </div>
       </section>
 
-      <hr />
+      {/* <hr /> */}
 
-      <section>
-        <h2>Habilidades</h2>
-      </section>
+      {/* <section>
+        <h2>HABILIDADES</h2>
+      </section> */}
     </div>
   </>
 }

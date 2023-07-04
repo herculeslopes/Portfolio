@@ -2,10 +2,12 @@ import './App.css'
 
 import { Navigate, BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
-import Slug from './Pages/Slug'
+// import Slug from './Pages/Slug'
 import SharedLayout from './Layouts/SharedLayout'
 import Roadmap from './Pages/Roadmap'
 import Scrollbars from 'react-custom-scrollbars'
+
+import SISMOB from './Content/SISMOB.mdx'
 
 function App() {
 
@@ -21,7 +23,8 @@ function App() {
             <Route path='roadmap' element={<Roadmap />} />
 
             <Route path='projects'>
-              <Route path=':slug' element={<Slug />} />
+              <Route path='sismob' element={<SISMOB />} />
+              {/* <Route path=':slug' element={<Slug />} /> */}
             </Route>
 
           </Route>

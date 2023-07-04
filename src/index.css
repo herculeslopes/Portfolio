@@ -42,8 +42,7 @@
   margin-top: auto;
 }
 .project-card-wrapper :hover.project-card {
-  width: 95%;
-  height: 95%;
+  height: 90%;
 }
 
 .projects-container {
@@ -52,7 +51,27 @@
   gap: 30px;
 }
 .projects-container .project-card-wrapper {
-  width: calc((100% - 60px) / 2);
+  width: 100%;
+}
+@media screen and (min-width: 70em) {
+  .projects-container .project-card-wrapper {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 140em) {
+  .projects-container .project-card-wrapper {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 160em) {
+  .projects-container .project-card-wrapper {
+    width: calc((100% - 120px) / 4);
+  }
+}
+@media screen and (min-width: 240em) {
+  .projects-container .project-card-wrapper {
+    width: calc((100% - 150px) / 5);
+  }
 }
 
 :root {
@@ -73,24 +92,57 @@ html {
 
 body {
   color: #213547;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
+}
+
+p {
+  text-align: justify;
+  text-indent: 50px;
 }
 
 .home section {
   padding: 0 10%;
 }
+.home section.presentation {
+  text-align: center;
+  line-height: 0.3;
+}
+.home section.presentation h1 {
+  font-size: 30pt;
+}
+.home section.presentation h2 {
+  font-size: 20pt;
+  font-weight: normal;
+}
 
 .static-content-wrapper {
   margin: auto;
   width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.static-content-wrapper p {
+  font-weight: 600;
 }
 
-.navlinks {
+.header {
   display: flex;
-  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+}
+.navbar .navlinks {
+  display: flex;
   gap: 5px;
 }
-.navlinks a {
+.navbar .navlinks a {
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
@@ -100,17 +152,22 @@ body {
   border-radius: 3px;
   padding: 5px;
 }
-.navlinks a:visited {
+.navbar .navlinks a:visited {
   color: inherit;
 }
-.navlinks a:hover, .navlinks a.active {
+.navbar .navlinks a:hover, .navbar .navlinks a.active {
   background-color: #213547;
   color: white;
 }
 
 hr {
+  margin-top: 30px;
   width: 30%;
   border: 1px solid #213547;
+}
+
+.socials {
+  display: flex;
 }
 
 /* 

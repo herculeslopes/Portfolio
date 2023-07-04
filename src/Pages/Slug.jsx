@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import SISMOB from "../Projects/SISMOB";
+import SISMOB from "../Projects/SISMOB/index";
 import Default from "../Components/Default";
 import CGeo from "../Components/CGeo";
 
