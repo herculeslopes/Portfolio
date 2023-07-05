@@ -22,8 +22,12 @@ function App() {
 
             <Route path='roadmap' element={<Roadmap />} />
 
+            {/* Projects */}
+            <Route path='sismob' element={<SISMOB />} />
+
+
+
             <Route path='projects'>
-              <Route path='sismob' element={<SISMOB />} />
               {/* <Route path=':slug' element={<Slug />} /> */}
             </Route>
 
